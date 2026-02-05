@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Text to Voice</title>
+</head>
+<body>
+
+  <h2>Text to Voice</h2>
+
+  <input type="text" id="text" placeholder="Напиши текст">
+  <br><br>
+
+  <label>Скорость:</label>
+  <input type="range" id="speed" min="0.5" max="2" step="0.1" value="1">
+  <br><br>
+
+  <label>Громкость:</label>
+  <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+  <br><br>
+
+  <label>Голос:</label>
+  <select id="voice">
+    <option value="male">Мужской</option>
+    <option value="female">Женский</option>
+  </select>
+  <br><br>
+
+  <button id="speak">Говорить</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
